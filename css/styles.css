@@ -1,0 +1,41 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+h2{ text-align: center;}
+
+/*FOOTER*/
+
+.pagina > * {
+    padding: 1rem;
+}
+
+.pagina{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.pagina .encabezado{
+    background-color: burlywood;
+}
+
+.pagina .contenido-ppal{
+    background-color: lightcyan;
+    max-width: 80rem;
+    margin: 0 auto;
+    flex: 1;
+}
+
+.pagina .footer{
+    background-color: lightseagreen;
+    color: whitesmoke;
+
+}
